@@ -5,5 +5,5 @@ import org.springframework.stereotype.Repository
 
 @Repository
 interface DeviceRepository : CrudRepository<Device, Long> {
-    fun findById(id: Int): List<Device>
+
 }

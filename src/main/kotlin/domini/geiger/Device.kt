@@ -12,4 +12,6 @@ class Device (val lat: Long = 0, val lng: Long = 0, val sievert: Long = 0){
     @GeneratedValue(strategy = GenerationType.AUTO)
     var deviceId: Long = 0
 
+    constructor(): this(0, 0, 0)
+
 }

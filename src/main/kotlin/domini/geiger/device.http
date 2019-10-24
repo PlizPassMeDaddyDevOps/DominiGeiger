@@ -6,7 +6,17 @@
 # * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
 # * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
 
-GET http://localhost:8080/Devices
+GET http://localhost:8080/devices/all
 content-Type: application/json
+
+###
+POST http://localhost:8080/devices
+content-Tye: application/json
+{
+"lat": "5",
+"lng": "5",
+"sievert": "5"
+
+}
 
 ###
