@@ -6,11 +6,11 @@ import javax.persistence.GenerationType
 import javax.persistence.Id
 
 @Entity
-class Device (val lat: Long = 0, val lng: Long = 0, val sievert: Long = 0){
+class Device (var lat: Long = 0, var lng: Long = 0, var sievert: Int = 0){
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    var deviceId: Long = 0
+    var id: Long? = null
 
     constructor(): this(0, 0, 0)
 

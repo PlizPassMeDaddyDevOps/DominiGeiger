@@ -8,7 +8,7 @@ object DtoConverter {
                 lat = device.lat,
                 lng = device.lng,
                 sievert = device.sievert,
-                deviceId = device.deviceId.toString()
+                id = device.id.toString()
         )
     }
 

@@ -1,8 +1,8 @@
 package domini.geiger
 
 class DeviceDto(
-        val lat: Long? = 0,
-        val lng: Long? = 0,
-        val sievert: Long? =0,
-        var deviceId: String? = null
+        var lat: Long? = 0,
+        var lng: Long? = 0,
+        var sievert: Int? =0,
+        var id: String? = null
 )
