@@ -76,7 +76,7 @@ class DeviceController(val deviceRepository: DeviceRepository) {
         val device = deviceRepository.findById(id).orElse(null)
                 ?: return ResponseEntity.status(404).build()
 
-        device.lat = dto.lat!!
+        device.lat = dto.lat!!.toLong()!!
         device.lng = dto.lng!!
         device.sievert  = dto.sievert!!
 
