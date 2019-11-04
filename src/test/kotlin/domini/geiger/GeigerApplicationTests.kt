@@ -63,6 +63,7 @@ class SpaRestBackendApplicationTest {
                 .then()
                 .statusCode(404)
     }
+    /*
     @Test
     fun testRetrieveEachSingleDevice() {
 
@@ -114,5 +115,5 @@ class SpaRestBackendApplicationTest {
                 .then()
                 .statusCode(200)
                 .body("size()", equalTo(n + 1))
-    }
+    }*/
 }
